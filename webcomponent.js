@@ -3,6 +3,12 @@
     tmpl.innerHTML = `
         <h1>Hola everis!</h1>
 		
+		<script>
+		var ran;
+		ran = Math.round(Math.random()*50000);
+		document.write("Usted es el visitante " + ran + " de esta página.");
+		</script>
+		
     `;
 
     customElements.define('com-sap-sample-helloworld1', class HelloWorld1 extends HTMLElement {
